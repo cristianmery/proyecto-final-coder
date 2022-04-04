@@ -212,15 +212,11 @@ h2{
     margin: 10px;
 }
 
-h3 {
-    padding: 10px;
-    
-}
+
 
 p {
     color: black;
-    font-style: 'Roboto';
-    font-weight: bold;
+    font-style: 'Roboto';    
     font-family: Arial, Helvetica, sans-serif;
 }
 
