@@ -1,3 +1,6 @@
+$primary-color: black;
+$secondary-color: #f2f2f2ff;
+
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Roboto&display=swap');
 
 * {
@@ -8,7 +11,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f2f2f2ff;
+    background-color: $secondary-color;
     font-size: 16px;
 
 }
@@ -94,7 +97,7 @@ header {
 
 .encabezado a {
     text-decoration: none;
-    color: black;
+    color: $primary-color;
     font-size: 1.2rem;
     font-weight: bold;
 } 
@@ -151,7 +154,7 @@ div.reset {
 
 footer {
     grid-area: footer;    
-    background-color:  #f2f2f2ff;
+    background-color:  $secondary-color;
     font-style: normal;
     font-weight: 200;
     font-size: 14px;

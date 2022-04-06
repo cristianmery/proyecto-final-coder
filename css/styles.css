@@ -31,7 +31,9 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header" "main"      "footer";
+      grid-template-areas: "header"
+ "main"     
+ "footer";
 }
 
 .contenedor-perspectivas {
@@ -39,7 +41,12 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header" "main" "section"   "section" "section"        "footer";
+      grid-template-areas: "header"
+ "main"
+ "section"  
+ "section"
+ "section"       
+ "footer";
 }
 
 .contenedor-proyectos {
@@ -47,7 +54,9 @@ body {
       grid-template-columns: repeat 3, 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header header header" "main aside aside"         "footer footer footer";
+      grid-template-areas: "header header header"
+ "main aside aside"        
+ "footer footer footer";
 }
 
 .contenedor-servicios {
@@ -55,7 +64,9 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header" "main"      "footer";
+      grid-template-areas: "header"
+ "main"     
+ "footer";
 }
 
 .contenedor-contacto {
@@ -63,7 +74,9 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header" "main"      "footer";
+      grid-template-areas: "header"
+ "main"     
+ "footer";
 }
 
 .contenedor-nosotros {
@@ -71,7 +84,9 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header" "main"      "footer";
+      grid-template-areas: "header"
+ "main"     
+ "footer";
 }
 
 aside {
