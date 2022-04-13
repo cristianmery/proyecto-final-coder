@@ -1,4 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Roboto&display=swap");
+body {
+  font-size: 16px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +41,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f2f2f2ff;
-  font-size: 16px;
 }
 
 .contenedor {
@@ -75,14 +106,7 @@ body {
 }
 
 aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   float: right;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
 }
 
 header {
@@ -173,11 +197,6 @@ footer {
   margin: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 h1 {
   font-size: 20px;
   padding: 10px;
@@ -239,4 +258,4 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */

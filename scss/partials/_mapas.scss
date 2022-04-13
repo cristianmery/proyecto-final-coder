@@ -1,0 +1,13 @@
+$display: (
+    //Clave - Valor
+    color-uno: blue,
+    color-dos: red,
+    bg-color: red,
+    tamano-fuente: 16px,
+    
+);
+
+body {
+    font-size: map-get($display , tamano-fuente);
+}
+

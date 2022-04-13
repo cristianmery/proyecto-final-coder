@@ -1,0 +1,25 @@
+$color-principal: black;
+@mixin flex($display, $horizontal, $vertical) {    
+    display: $display;
+    justify-content: $horizontal;
+    align-items: $vertical;
+       
+}
+
+header {
+    @include flex(flex,space-around,flex-end);
+}
+
+aside {
+    @include flex(flex,center,center)
+}
+
+@mixin propiedades($text-decoration,$color) {
+    text-decoration: $text-decoration;
+    color: $color;  
+}
+
+a {
+    @include propiedades(none,$color-principal)
+}
+

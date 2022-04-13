@@ -1,3 +1,8 @@
+$primary-color: black;
+$secondary-color: #f2f2f2ff;
+
+@import "./partials/mapas";
+@import "./partials/variables";
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Roboto&display=swap');
 
 * {
@@ -8,23 +13,29 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f2f2f2ff;
-    font-size: 16px;
+    background-color: $secondary-color;
+    
 
 }
 
-.contenedor-index {      
+.contenedor{
     display: grid;
+    text-align: center;
+    img{
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
+    }
+    &-index{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
         "header"
         "main"     
-        "footer";
-}
-
-.contenedor-perspectivas {      
-    display: grid;
+        "footer"   
+    }
+    &-perspectivas{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
@@ -34,63 +45,45 @@ body {
         "section"
         "section"       
         "footer";
-}
-
-.contenedor-proyectos {
-    display: grid;
+    }
+    &-proyectos{
     grid-template-columns: repeat (3 , 1fr);
     grid-template-rows: repeat(5,auto);
     grid-template-areas:
         "header header header"
         "main aside aside"        
         "footer footer footer";
-}
-
-.contenedor-servicios {      
-    display: grid;
+    }
+    &-servicios{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
         "header"
         "main"     
         "footer";
-}
-
-.contenedor-contacto {      
-    display: grid;
+    }
+    &-contacto{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
         "header"
         "main"     
         "footer";
-}
-
-.contenedor-nosotros {      
-    display: grid;
+    }
+    &-nosotros{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
         "header"
         "main"     
         "footer";
+    }
+
 }
 
-.contenedor-servicios {      
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: 
-        "header"
-        "main"     
-        "footer";
-}
-
-aside{
-    display: flex;
+aside{    
     float: right;
-    justify-content: center;
-    text-align: center;
+    
 }
 
 header {
@@ -104,7 +97,7 @@ header {
 
 .encabezado a {
     text-decoration: none;
-    color: black;
+    color: $primary-color;
     font-size: 1.2rem;
     font-weight: bold;
 } 
@@ -114,7 +107,7 @@ header {
     height: auto;
 }
 
-.lista {
+.lista{
     list-style: none;
     display: flex;
     align-items: center;
@@ -123,28 +116,15 @@ header {
     border: solid 1px;
     padding: 15px;
     border-radius: 10px;
-}
-
-.lista a:hover {
-    color: gray;
+    a:hover{
+        color: gray;
+    } 
 }
 
 
 main {
     grid-area: main;
     
-}
-
-.contenedor{
-    text-align: center;
-}
-
-.contenedor img{
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;    
-          
 }
 
 .margen-texto{
@@ -156,19 +136,15 @@ main {
     margin: 20px;
     text-align: justify;
     width: 95%;
-   
-    
+    img{
+        width: auto;
+        height: auto;     
+        float: left;
+        margin:20px;               
+    }
+      
 }
 
-
-.texto-costado img{
-    width: auto;
-    height: auto;     
-    float: left;
-    margin:20px;
-    
-    
-}
 
 div.reset {
     clear: both;
@@ -176,11 +152,9 @@ div.reset {
 }
 
 
-
-
 footer {
     grid-area: footer;    
-    background-color:  #f2f2f2ff;
+    background-color:  $secondary-color;
     font-style: normal;
     font-weight: 200;
     font-size: 14px;
@@ -191,11 +165,6 @@ footer {
     margin: 20px;
 }
 
-
-a {
-    text-decoration: none;
-    color: black;
-}
 
 
 h1 {
@@ -249,13 +218,9 @@ p {
     grid-template-columns: 480px 480px 480px;
     grid-template-rows:240px 240px;
     justify-content: center; 
-    
-}
-
-.grid-container img{
+    img{
     width: 100%;
     height: 100%;
-    object-fit: cover;  
-    
-    
+    object-fit: cover; 
+    }      
 }
