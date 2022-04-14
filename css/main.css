@@ -1,35 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Roboto&display=swap");
-body {
-  font-size: 16px;
-}
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
 
 * {
   padding: 0;
@@ -41,6 +11,7 @@ a {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f2f2f2ff;
+  font-size: 16px;
 }
 
 .contenedor {
@@ -62,7 +33,9 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header" "main"      "footer";
+      grid-template-areas: "header"
+ "main"     
+ "footer";
 }
 
 .contenedor-perspectivas {
@@ -70,7 +43,12 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header" "main" "section"   "section" "section"        "footer";
+      grid-template-areas: "header"
+ "main"
+ "section"  
+ "section"
+ "section"       
+ "footer";
 }
 
 .contenedor-proyectos {
@@ -78,7 +56,9 @@ body {
       grid-template-columns: repeat 3, 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header header header" "main aside aside"         "footer footer footer";
+      grid-template-areas: "header header header"
+ "main aside aside"        
+ "footer footer footer";
 }
 
 .contenedor-servicios {
@@ -86,7 +66,9 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header" "main"      "footer";
+      grid-template-areas: "header"
+ "main"     
+ "footer";
 }
 
 .contenedor-contacto {
@@ -94,7 +76,9 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header" "main"      "footer";
+      grid-template-areas: "header"
+ "main"     
+ "footer";
 }
 
 .contenedor-nosotros {
@@ -102,11 +86,20 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "header" "main"      "footer";
+      grid-template-areas: "header"
+ "main"     
+ "footer";
 }
 
 aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   float: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 header {
@@ -195,6 +188,11 @@ footer {
   position: relative;
   padding: 20px;
   margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
