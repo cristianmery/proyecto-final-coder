@@ -179,6 +179,15 @@ h2{
     text-align: center;
     padding: 10px;
     margin: 10px;
+    
+}
+
+h3{
+   
+    padding: 10px;
+    margin: 10px;
+    font-size: bold;
+    
 }
 
 
@@ -187,6 +196,7 @@ p {
     color: black;
     font-style: 'Roboto';    
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .footerNav {
@@ -212,15 +222,21 @@ p {
     height: 28px;
 }
 
+.contenedor-ubicacion{
+    text-align: left;
+}
 
 .grid-container{
     display: grid;    
     grid-template-columns: 480px 480px 480px;
-    grid-template-rows:240px 240px;
+    grid-template-rows:240px;
     justify-content: center; 
     img{
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    }      
+    }  
+    
 }
+
+

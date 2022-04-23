@@ -46,38 +46,74 @@
 </header>    
 <main>      
   <h2>Contacto</h2>   
-  <section>   
-    <div class=texto-costado>
-      <img src="img/contacto-1.jpg" alt="Esta es una casa con panel solar" class="imagen-body" >       
+  <section>
+    <div class="contenedor">
+      <img src="img/contacto-1.jpg" alt="Imagen de contacto" class="img-fluid">       
       <p class="margen-texto">
-        
-      </p>
+              </p>
      
       
       
         <div class="reset"></div>
 
-        <div>
-          <form>            
-            <div>
-            <label for="">Nombre:</label>
-            <input type="text" name="nombre" placeholder="Nombre y apellido">    
-            <label for="">Correo:</label>        
-            <input type="text" name="correo" placeholder="Ingrese correo">
-            <label for="">Telefono de contacto:</label>     
-            <input type="text" name="telefono" placeholder="Telefono">         
-            </div>
-
-            <div>
-            <label for="">Comentario:</label>
-            <textarea name="Comentario" placeholder="Escriba aquí"></textarea>
-            <input type="submit" value="Enviar">            
-            </div>
+        <div class="container-contacto">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="well well-sm">
+                      <form class="form-horizontal" method="post">
+                          <fieldset>
+                              <legend class="text-center header">Formulario de contacto</legend>
+      
+                              <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                  <div class="col-md-8">
+                                      <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                  <div class="col-md-8">
+                                      <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                  </div>
+                              </div>
+      
+                              <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                  <div class="col-md-8">
+                                      <input id="email" name="email" type="text" placeholder="Correo Electronico" class="form-control">
+                                  </div>
+                              </div>
+      
+                              <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                  <div class="col-md-8">
+                                      <input id="phone" name="phone" type="text" placeholder="Telefono de contacto" class="form-control">
+                                  </div>
+                              </div>
+      
+                              <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                  <div class="col-md-8">
+                                      <textarea class="form-control" id="message" name="message" placeholder="Ingresa tu consulta aqui" rows="7"></textarea>
+                                  </div>
+                              </div>
+      
+                              <div class="form-group">
+                                  <div class="col-md-12 text-center">
+                                      <button type="submit" class="btn btn-primary btn-lg">Enviar Consulta</button>
+                                  </div>
+                              </div>
+                          </fieldset>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
 
         </form>
-        <h3>Ubicación</h3>
-        <p>Avenida Tanto #4252, Santiago, Chile</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212998.4933810823!2d-70.76991496220944!3d-33.47270916504837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1645731250673!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h3 class="contenedor-ubicacion">Ubicación</h3>
+        <p class="contenedor-ubicacion">Avenida Tanto #4252, Santiago, Chile</p>
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212998.4933810823!2d-70.76991496220944!3d-33.47270916504837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1645731250673!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     </div>
   </section>    

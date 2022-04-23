@@ -1,0 +1,23 @@
+@media screen and (max-width: 500px){
+    body {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "section"
+        "footer"
+        ;
+    }
+
+    header {
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+}
