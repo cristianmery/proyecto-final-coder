@@ -56,68 +56,103 @@
       
         <div class="reset"></div>
 
-        <div class="container-contacto">
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="well well-sm">
-                      <form class="form-horizontal" method="post">
-                          <fieldset>
-                              <legend class="text-center header">Formulario de contacto</legend>
+        <section class="mb-4">
+          
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Escríbenos</h2>
+          
+          <p class="text-center w-responsive mx-auto mb-5">¿Tienes alguna consulta o idea? Déjanos tu mensaje y nuestro equipo te contactará en breves</p>
       
-                              <div class="form-group">
-                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                  <div class="col-md-8">
-                                      <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-                                  </div>
+          <div class="row">     
+              
+              <div class="col-md-9 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+      
+                     
+                      <div class="row">
+      
+                          
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="name" name="name" class="form-control">
+                                  <label for="name" class="">Nombre</label>
                               </div>
-                              <div class="form-group">
-                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                  <div class="col-md-8">
-                                      <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
-                                  </div>
+                          </div>
+                          
+      
+                          
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="email" name="email" class="form-control">
+                                  <label for="email" class="">Correo</label>
+                              </div>
+                          </div>
+                         
+      
+                      </div>
+                     
+      
+                      
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="subject" name="subject" class="form-control">
+                                  <label for="subject" class="">Asunto</label>
+                              </div>
+                          </div>
+                      </div>
+                      
+      
+                      
+                      <div class="row">
+      
+                          <div class="col-md-12">
+      
+                              <div class="md-form">
+                                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                  <label for="message">Comentario</label>
                               </div>
       
-                              <div class="form-group">
-                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                  <div class="col-md-8">
-                                      <input id="email" name="email" type="text" placeholder="Correo Electronico" class="form-control">
-                                  </div>
-                              </div>
+                          </div>
+                      </div>
+                     
       
-                              <div class="form-group">
-                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                                  <div class="col-md-8">
-                                      <input id="phone" name="phone" type="text" placeholder="Telefono de contacto" class="form-control">
-                                  </div>
-                              </div>
+                  </form>
       
-                              <div class="form-group">
-                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                  <div class="col-md-8">
-                                      <textarea class="form-control" id="message" name="message" placeholder="Ingresa tu consulta aqui" rows="7"></textarea>
-                                  </div>
-                              </div>
-      
-                              <div class="form-group">
-                                  <div class="col-md-12 text-center">
-                                      <button type="submit" class="btn btn-primary btn-lg">Enviar Consulta</button>
-                                  </div>
-                              </div>
-                          </fieldset>
-                      </form>
+                  <div class="text-center text-md-left">
+                      <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar Mensaje</a>
                   </div>
+                  <div class="status"></div>
               </div>
+              
+              <div class="col-md-3 text-center">
+                  <ul class="list-unstyled mb-0">
+                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                          <p>Avenida Inventada #4252, Santiago, Chile</p>
+                      </li>
+      
+                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                          <p>+ 56 234 567 89</p>
+                      </li>
+      
+                      <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                          <p>contacto@solargen.cl</p>
+                      </li>
+                  </ul>
+              </div>
+              
+      
           </div>
-      </div>
+      
+      </section>
 
         </form>
-        <h3 class="contenedor-ubicacion">Ubicación</h3>
-        <p class="contenedor-ubicacion">Avenida Tanto #4252, Santiago, Chile</p>
-        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212998.4933810823!2d-70.76991496220944!3d-33.47270916504837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1645731250673!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h3 class="contenedor-ubicacion">Mapa</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.80000029219!2d-70.62757688523627!3d-33.45451680510616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c563100abd9f%3A0x54116faef7b44f38!2sMatta%20Ote.%20550-422%2C%20%C3%91u%C3%B1oa%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1652058624090!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </div>
   </section>    
-    </main>  
+    </main>
+    <hr>
     <footer class="footer">
         <div>
           <div class="flexfooter">

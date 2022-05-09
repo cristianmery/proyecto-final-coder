@@ -218,6 +218,19 @@ p {
     
 }
 
+.flexfooter {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    text-align: center;    
+    font-weight: bold;
+}
+
 .imgsocial {
     height: 28px;
 }
@@ -239,4 +252,24 @@ p {
     
 }
 
+hr {
+        background-color: black;
+  }
 
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    border-radius: 8px;    
+    opacity: 0.8;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    
+}
+
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}

@@ -9,5 +9,6 @@ $display: (
 
 body {
     font-size: map-get($display , tamano-fuente);
+    margin: 10px;
 }
 

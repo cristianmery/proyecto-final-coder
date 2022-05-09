@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Roboto&display=swap");
 body {
   font-size: 16px;
+  margin: 10px;
 }
 
 header {
@@ -242,6 +243,27 @@ p {
   color: red;
 }
 
+.flexfooter {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .imgsocial {
   height: 28px;
 }
@@ -267,5 +289,27 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+hr {
+  background-color: black;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border-radius: 8px;
+  opacity: 0.8;
+  filter: alpha(opacity=40);
+  /* For IE8 and earlier */
+}
+
+img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  /* For IE8 and earlier */
 }
 /*# sourceMappingURL=main.css.map */
